@@ -6,18 +6,18 @@ import lombok.Data;
 
 @Data
 public class EnrollmentItem extends CsvToBean {
-    @CsvBindByName(column = "userId")
+    @CsvBindByName(column = "USERID")
     private String userId;
 
-    @CsvBindByName(column = "firstName")
+    @CsvBindByName(column = "FIRSTNAME")
     private String firstName;
 
-    @CsvBindByName(column = "lastName")
+    @CsvBindByName(column = "LASTNAME")
     private String lastName;
 
-    @CsvBindByName(column = "version")
+    @CsvBindByName(column = "VERSION")
     private int version;
 
-    @CsvBindByName(column = "insuranceCompany")
+    @CsvBindByName(column = "INSURANCECOMPANY")
     private String insuranceCompany;
 }
