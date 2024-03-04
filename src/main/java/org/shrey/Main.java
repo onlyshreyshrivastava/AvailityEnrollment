@@ -68,8 +68,6 @@ public class Main {
     private static void sortByLastNameAndFirstName(List<EnrollmentItem> value) {
         value.sort((Comparator) (item1, item2) -> {
 
-            // Sort by last name
-
             String ln1 = ((EnrollmentItem) item1).getLastName();
             String ln2 = ((EnrollmentItem) item2).getLastName();
             int lnComp = ln1.compareTo(ln2);
@@ -77,8 +75,6 @@ public class Main {
             if (lnComp != 0) {
                 return lnComp;
             }
-
-            // If last name is same, sort by first name
 
             String fn1 = ((EnrollmentItem) item1).getFirstName();
             String fn2 = ((EnrollmentItem) item2).getFirstName();
